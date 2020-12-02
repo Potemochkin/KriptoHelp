@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFon"
+    tools:context=".TwoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:gravity="center_horizontal"
+            android:text="Подробная информация"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="264dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
+
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorFon"
+                    android:drawableBottom="@android:drawable/ic_menu_info_details" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="322dp"
+                    android:layout_height="29dp"
+                    android:text="Информация о программе"
+                    android:textColor="@color/colorPrimaryDark" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+
+                <Button
+                    android:id="@+id/button14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorFon"
+                    android:drawableBottom="@android:drawable/ic_menu_upload" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="82dp"
+                    android:layout_height="29dp"
+                    android:text="Переход в папку с APK"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/button15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorFon"
+                    android:drawableBottom="@android:drawable/ic_delete" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="82dp"
+                    android:layout_height="29dp"
+                    android:text="Выход из приложения"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/button16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorFon"
+                    android:drawableBottom="@android:drawable/ic_menu_delete" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="82dp"
+                    android:layout_height="29dp"
+                    android:text="Удаление рассчитанных данных"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/button17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorFon"
+                    android:drawableBottom="@android:drawable/ic_menu_today" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="82dp"
+                    android:layout_height="29dp"
+                    android:text="Произвести расчет"
+                    android:textColor="@color/colorPrimaryDark" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/button18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorFon"
+                    android:drawableBottom="@android:drawable/ic_menu_revert" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="82dp"
+                    android:layout_height="29dp"
+                    android:text="Откатить назад (только после удаления)"
+                    android:textColor="@color/colorPrimaryDark" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/button20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorFon"
+                    android:drawableBottom="@drawable/abc_vector_test" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="82dp"
+                    android:layout_height="29dp"
+                    android:text="Вернуться назад"
+                    android:textColor="@color/colorPrimaryDark" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/button22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorFon"
+                    android:drawableBottom="@android:drawable/ic_dialog_email" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="82dp"
+                    android:layout_height="29dp"
+                    android:text="Написать разработчику"
+                    android:textColor="@color/colorPrimaryDark" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/button23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorFon"
+                    android:drawableBottom="@android:drawable/btn_star_big_on" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="82dp"
+                    android:layout_height="29dp"
+                    android:text="Оставить отзыв"
+                    android:textColor="@color/colorPrimaryDark" />
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="2dp"
+            android:text="   Данная программа предназначена для выполнения расчетов алгоритмов по дисциплине: Теоретичесике основы криптографии.\n Рассчет производится строго по формулам. Алгоритмы не реализованы на поиск сравнимых по модулю, поэтому числа могут отличаться от примеров, но на ответ это не влияет\n\n\n"
+            android:textColor="#3F51B5"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+
+
+            android:gravity="center_horizontal"
+            android:text="Спасибо за скачивание программы!\nЕсли обнаружена ошибка - сообщи разработчикам!"
+
+            android:textColor="#CDDC39"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:drawableBottom="@drawable/abc_vector_test"
+                android:onClick="onMyClickExit" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:drawableBottom="@android:drawable/ic_dialog_email"
+                android:onClick="onMyClickWriteS"
+                android:text="Сергей"
+                android:textColor="@color/colorPrimary"
+                tools:text="Сергей" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:drawableBottom="@android:drawable/ic_dialog_email"
+                android:onClick="onMyClickWriteI"
+                android:text="Иван"
+                android:textColor="@color/colorPrimary"
+                tools:text="Иван" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:drawableBottom="@android:drawable/btn_star_big_on"
+                android:onClick="onMyClickToOtvet" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

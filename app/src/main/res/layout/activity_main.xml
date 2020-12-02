@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorFon"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ButtonInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:onClick="Info"
+            app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+        <Button
+            android:id="@+id/sum"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:drawableBottom="@android:drawable/ic_menu_upload"
+            android:onClick="onMyClick"
+            android:padding="6dp"
+            android:textColor="#F49836"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/ButtonExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:onClick="Exit"
+            app:srcCompat="@android:drawable/ic_delete" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/name2"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:gravity="center_horizontal"
+        android:text="Главное окно расчетов"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"></TextView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="newForm_algo_1"
+        android:text="Сложение-удвоение" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="newForm_algo_2"
+        android:text="Быстрое возведение в степень" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="newForm_algo_3"
+        android:text="расширенный алгоритм евклида" />
+
+    <TextView
+        android:id="@+id/name3"
+        android:layout_width="match_parent"
+        android:layout_height="224dp"
+        android:gravity="center_horizontal"
+        android:text="\n\n\n\nБыстрое возведение в степень решает 2 задание ТК-2"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"></TextView>
+
+</LinearLayout>

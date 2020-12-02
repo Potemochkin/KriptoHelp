@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_tk_1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorFon">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:drawableBottom="@drawable/abc_vector_test"
+                android:onClick="onMyClickExit" />
+
+            <ImageView
+                android:id="@+id/buttonInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="Info"
+                app:srcCompat="@android:drawable/ic_menu_info_details" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:gravity="center_horizontal"
+            android:text="Выбери номер задания ТК-2"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textSize="20sp"></TextView>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/task_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="1"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorText"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:theme="@style/MyRadioButton"/>
+
+            <RadioButton
+                android:id="@+id/task_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:text="2"
+                android:textColor="@color/colorText"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:theme="@style/MyRadioButton"/>
+
+            <RadioButton
+                android:id="@+id/task_3"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3"
+                android:textColor="@color/colorText"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:theme="@style/MyRadioButton"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/NamA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/files"
+                android:hint=" Введи а  "
+                android:inputType="number"
+                android:paddingLeft="8dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/NamB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/files"
+                android:hint="  Введи b  "
+                android:inputType="number"
+                android:paddingLeft="8dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/NumOsnov"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/files"
+                android:hint="  Введи m  "
+                android:inputType="number"
+                android:paddingLeft="8dp"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:gravity="center_horizontal"
+            android:text="Формат ввода: R_m(b^a)"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorFon"
+                android:drawableBottom="@android:drawable/ic_menu_today" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorFon"
+                android:drawableBottom="@android:drawable/ic_menu_delete"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TextRes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:orientation="horizontal">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <HorizontalScrollView
+                    android:layout_width="130pt"
+                    android:layout_height="135dp"
+                    android:layout_marginTop="10dp">
+
+                    <TableLayout
+                        android:id="@+id/table_main"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                </HorizontalScrollView>
+            </ScrollView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textRes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/Reshen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:textColor="#4CAF50"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
