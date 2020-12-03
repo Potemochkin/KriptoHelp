@@ -21,6 +21,8 @@ public class Activity_algoritm_2 extends AppCompatActivity {
         setContentView(R.layout.activity_algoritm_2);
         Resh = findViewById(R.id.Reshen); //Вывод слова: сложение удвоение
         Resh.setMovementMethod(new ScrollingMovementMethod());
+
+        //
     }
 
     public void onMyClickExit(View view) {
