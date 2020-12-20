@@ -349,15 +349,29 @@ public class Activity_algoritm_2 extends AppCompatActivity {
                 }
 
                 Resh.setText(" Ищем: " + b_2 + " ^ " + constA_1 + " (mod "+ Os+" ) - строим таблицу;\n ");
-
+int okrigl=0;
+                okrigl=Math.round(Os/2);
+                boolean booChek=true;
                 for (i = 1; i < count_2; i++) {
 
                     if (massStepin[2][i - 1] * massStepin[2][i - 1] > Os) {
+                            if ((massStepin[2][i - 1] > okrigl)  || (massStepin[2][i - 1] < 0)) {
+                                if (massStepin[2][i - 1] < 0)
+                                    massStepin[2][i - 1]= massStepin[2][i - 1] * massStepin[2][i - 1];
+                                while (booChek) {
+                                    if (massStepin[2][i - 1] > okrigl) {
+                                massStepin[2][i - 1] = massStepin[2][i - 1] - Os;
+                            }
+                            else
+                                booChek=false;
+                        }
+                    }
+                        else {
                         massStepin[2][i] = TablSumm(massStepin[2][i - 1], Os);
                         if (massStepin[2][i] == -1)
                             finish();
                         //если найденное b(i) в степени 2 больше модуля, тогда посчитать эту степень с помощью таблицы сложения удвоения
-                    } else {
+                    } }else {
                         massStepin[2][i] = massStepin[2][i - 1] * massStepin[2][i - 1];
                     }
                     if (massStepin[1][i - 1] % 2 == 0)

@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
     {
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
         builder.setTitle("О программе")
-                .setMessage("Ведущий разработчик:\n                              Потемкин Сергей\nПомощники:\n                              Вершинин Иван\n                              Кочанов Сергей\n\nВерсия:                        4.0.1b.t\"\n\n                       Что нового:\n1. Частичное добавление ТК-2\n\n~ У пользователей возможны ошибки отображения элементов из-за размера экрана\n")
+                .setMessage("Ведущий разработчик:\n                              Потемкин Сергей\nПомощники:\n                              Вершинин Иван\n                              Кочанов Сергей\n\nВерсия:                        4.0.2b.t\"\n\n                       Что нового:\n1. Частичное добавление ТК-2\n\n~ У пользователей возможны ошибки отображения элементов из-за размера экрана\n")
                 .setCancelable(false)
                 .setPositiveButton("Подробнее",
                         new DialogInterface.OnClickListener() {
